@@ -1,5 +1,5 @@
 body {
-  background: #f1f7ed;
+  background: #f6f7f1;
 }
 
 /* The sidebar menu */
@@ -10,7 +10,7 @@ body {
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #610f7f; /* Black*/
+  background-color: #790f8b; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -22,9 +22,11 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #ffb140;
+  color: #ffc240;
   display: block;
   transition: 0.3s;
+  font-family: 'Dongle', sans-serif;
+  font-size: 200%;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -37,7 +39,7 @@ body {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 250%;
   margin-left: 50px;
 }
 
@@ -45,8 +47,8 @@ body {
 .openbtn {
   font-size: 30px;
   cursor: pointer;
-  background-color: #610f7f;
-  color: #ffb140;
+  background-color: #790f8b;
+  color: #ffc240;
   padding: 15px 15px;
   border: none;
 }
@@ -64,7 +66,7 @@ body {
   display: flex;
   width: 100%;
   /* height: 2%; */
-  background-color: #610f7f;
+  background-color: #790f8b;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -75,41 +77,93 @@ body {
 
 /* index.html */
 .title {
-  color: #ffb140;
-  background: #610f7f;
+  color: #ffc240;
+  background: #790f8b;
   padding: auto;
   margin-left: 30px;
-  /* font-size: 100%; */
+  font-size: 150%;
+  font-family: 'Dongle', sans-serif;
+  text-decoration: none;
 }
 
 .header {
-  color: #610f7f;
+  color: #790f8b;
   text-align: center;
-  font-size: 400%;
-  padding: 30px;
+  font-size: 500%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Dongle', sans-serif;
 }
 
 hr {
-  color: #610f7f;
+  color: #790f8b;
 }
 
 .lower {
-  background: #ffb140;
+  background: #ffc240;
   margin: -8px;
-  padding: 30px;
+  padding: 20px;
   color: black;
   display: flex;
   justify-content: space-around;
+  font-family: 'Dongle', sans-serif;
+  font-size: 200%;
 }
 
 .sub {
-  padding-bottom: 20px;
+  padding-bottom: 38px;
+  text-align: center;
 }
 
 .button {
   padding: 10px;
-  background-color: #610f7f;
+  background-color: #790f8b;
   border: 3px solid #9c528b;
   color: #ffb140;
   text-decoration: none;
+  font-family: 'Dongle', sans-serif;
+  font-size: 75%;
+}
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -130px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 150px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#art {
+  top: 260px;
+  background-color: red;
+}
+
+#fiction {
+  top: 320px;
+  background-color: mediumspringgreen;
+}
+
+#nonfiction {
+  top: 380px;
+  background-color: palevioletred;
+}
+
+#poetry {
+  top: 440px;
+  background-color: darkred;
+}
+
+#music {
+  top: 500px;
+  background-color: goldenrod;
 }
