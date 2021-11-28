@@ -31,7 +31,8 @@ body {
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  color: #9c528b;
+  color: #402424;
+  /* text-shadow: 2px 2px #402424; */
 }
 
 /* Position and style the close button (top right corner) */
@@ -54,7 +55,7 @@ body {
 }
 
 .openbtn:hover {
-  color: #9c528b;
+  color: #402424;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -62,11 +63,12 @@ body {
   transition: margin-left .5s; /* If you want a transition effect */
   margin-left: -10px;
   margin-top: -10px;
-  padding: 9px;
+  padding: 8px;
   display: flex;
   width: 100%;
   /* height: 2%; */
   background-color: #790f8b;
+  box-shadow: 0px 8px 10px #402424;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -81,7 +83,7 @@ body {
   background: #790f8b;
   padding: auto;
   margin-left: 30px;
-  font-size: 150%;
+  font-size: 125%;
   font-family: 'Dongle', sans-serif;
   text-decoration: none;
 }
@@ -103,11 +105,12 @@ hr {
   background: #ffc240;
   margin: -8px;
   padding: 20px;
-  color: black;
+  color: #402424;
   display: flex;
   justify-content: space-around;
   font-family: 'Dongle', sans-serif;
   font-size: 200%;
+  box-shadow: 0px -6px 10px #402424;
 }
 
 .sub {
@@ -125,6 +128,10 @@ hr {
   font-size: 75%;
 }
 
+.button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* Style the links inside the sidenav */
 #mySidenav a {
   position: absolute; /* Position them relative to the browser window */
@@ -134,7 +141,6 @@ hr {
   width: 150px; /* Set a specific width */
   text-decoration: none; /* Remove underline */
   font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
   border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
 }
 
@@ -145,25 +151,65 @@ hr {
 /* The about link: 20px from the top with a green background */
 #art {
   top: 260px;
-  background-color: red;
+  background-color: crimson;
+  color: #ffc240;
 }
 
 #fiction {
   top: 320px;
-  background-color: mediumspringgreen;
+  background-color: turquoise;
+  color: #402424;
 }
 
 #nonfiction {
   top: 380px;
   background-color: palevioletred;
+  color: #402424;
 }
 
 #poetry {
   top: 440px;
   background-color: darkred;
+  color: #ffc240;
 }
 
 #music {
   top: 500px;
   background-color: goldenrod;
+  color: #402424;
+}
+
+.issues {
+  margin-left: 30%;
+  margin-top: 10%;
+  width: 65%;
+}
+
+.rowThree {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.oneIssue {
+  background-color: lightgray;
+  box-shadow: 3px 3px 5px #402424;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.issuePic {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.date {
+  color: #402424;
+  /* text-decoration: none; */
+  text-align: center;
+  font-size: 125%;
 }
