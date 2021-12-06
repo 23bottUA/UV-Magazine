@@ -135,13 +135,19 @@ hr {
 /* Style the links inside the sidenav */
 #mySidenav a {
   position: fixed; /* Position them relative to the browser window */
-  left: -130px; /* Position them outside of the screen */
+  left: -120px; /* Position them outside of the screen */
   transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 150px; /* Set a specific width */
+  padding-top: 10px; /* 10px padding */
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 10px;
+  width: 160px; /* Set a specific width */
   text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
+  font-size: 130%; /* Increase font size */
+  /* line-height: 15px; */
   border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  height: 35px;
+  vertical-align: middle;
 }
 
 #mySidenav a:hover {
@@ -153,30 +159,51 @@ hr {
   top: 260px;
   background-color: crimson;
   color: #ffc240;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 #fiction {
   top: 320px;
-  background-color: turquoise;
+  background-color: cornflowerblue;
   color: #402424;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 #nonfiction {
   top: 380px;
-  background-color: palevioletred;
-  color: #402424;
+  background-color: seagreen;
+  color: #ffc240;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 #poetry {
   top: 440px;
-  background-color: darkred;
-  color: #ffc240;
+  background-color: rosybrown;
+  color: #402424;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  vertical-align: middle;
 }
 
 #music {
   top: 500px;
   background-color: goldenrod;
   color: #402424;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.symbol {
+  width: 50px;
+  padding-top: -5px;
 }
 
 .issuesHeader {
@@ -187,8 +214,9 @@ hr {
 }
 
 .issues {
-  margin-left: 25%;
+  margin-left: 23%;
   margin-top: 3px;
+  /* margin-right: 10%; */
   width: 70%;
   border: 2px solid #402424;
   padding: 20px;
@@ -279,4 +307,9 @@ hr {
   text-align: center;
   /* padding-bottom: 10px; */
   font-size: 120%;
+}
+
+iframe {
+  margin-left: 25%;
+  margin-right: 25%;
 }
