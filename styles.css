@@ -121,6 +121,24 @@ hr {
   text-align: center;
 }
 
+.socials {
+  background: #9c528b;
+  margin: -8px;
+  padding: 20px;
+  color: #402424;
+  text-align: center;
+}
+
+.platform {
+  color: #ffc240;
+  font-size: 120%;
+}
+
+.insta {
+  width: 50px;
+  border-radius: 30%;
+}
+
 /* .sub1 {
   padding-bottom: 38px;
   text-align: center;
