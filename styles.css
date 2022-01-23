@@ -319,7 +319,7 @@ hr {
 
 .date {
   color: #402424;
-  /* text-decoration: none; */
+  text-decoration: none;
   text-align: center;
   font-size: 125%;
 }
