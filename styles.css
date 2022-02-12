@@ -82,6 +82,15 @@ body {
   box-shadow: 0px 8px 15px #8648ad;
 }
 
+.logo {
+  height: 100px;
+  width: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: -10%;
+  margin-right: 6%;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
@@ -115,6 +124,15 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: 'Dongle', sans-serif;
+}
+
+.largeLogo {
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  box-shadow: 0 6px 20px 0 #8648ad, 0 6px 20px 0 #8648ad;
 }
 
 /* hr {
