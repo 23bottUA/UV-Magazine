@@ -23,13 +23,13 @@ body {
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  /* font-size: 30px; */
   /* color: #ffc240; */
   color: #8648ad;
   display: block;
   transition: 0.3s;
   font-family: 'Dongle', sans-serif;
-  font-size: 200%;
+  font-size: 250%;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -44,13 +44,13 @@ body {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 250%;
-  margin-left: 50px;
+  font-size: 400%;
+  margin-left: 70px;
 }
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 30px;
+  font-size: 200%;
   cursor: pointer;
   /* background-color: #790f8b; */
   background-color: #291720;
@@ -127,12 +127,24 @@ body {
 }
 
 .largeLogo {
-  width: 50%;
-  margin-right: 25%;
-  margin-left: 25%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  width: 30%;
+  /* margin-right: 15%; */
+  /* margin-left: 15%; */
+  margin-top: 5%;
+  /* margin-bottom: 10%; */
   box-shadow: 0 6px 20px 0 #8648ad, 0 6px 20px 0 #8648ad;
+}
+
+.readNow {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Dongle', sans-serif;
+  font-size: 175%;
+  text-align: center;
+  /* width: 50%; */
+  margin-left: auto;
+  margin-right: auto;
+  /* justify-content: center; */
 }
 
 /* hr {
@@ -144,13 +156,17 @@ body {
 
 .lower {
   /* background: #ffc240; */
-  background: #7389ae;
-  margin: -8px;
-  padding: 20px;
+  background: #8648ad;
+  /* background-image: url("./pics/text.png"); */
+  margin-left: -8px;
+  margin-right: -8px;
+  /* padding: 20px; */
   /* color: #402424; */
   color: #291720;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  padding-bottom: 8px;
+  /* justify-content: center; */
   font-family: 'Dongle', sans-serif;
   font-size: 200%;
   /* border-top: 4px solid #1e000e; */
@@ -158,26 +174,52 @@ body {
   box-shadow: 0px -6px 10px #291720;
 }
 
-.sub {
+.sbmt {
   padding-bottom: 38px;
   text-align: center;
-  width: 25%;
+  /* float: right; */
+  padding-right: 10%;
+  margin-left: 50%;
+  background: lightgray;
+  width: 40%;
   /* margin-left: auto; */
   /* margin-right: auto; */
 }
 
+.spons {
+  padding-bottom: 38px;
+  text-align: center;
+  padding-left: 10%;
+  margin-right: 50%;
+  background: lightgray;
+  width: 40%;
+  /* width: 25%; */
+}
+
+.abt {
+  padding-bottom: 38px;
+  text-align: center;
+  /* float: right; */
+  padding-right: 10%;
+  margin-left: 50%;
+  background: lightgray;
+  width: 40%;
+}
+
 .socials {
   /* background: #9c528b; */
-  background: #e44e5a;
+  background: #7389ae;
   margin: -8px;
   padding: 20px;
+  padding-left: auto;
+  padding-right: auto;
   /* color: #402424; */
   color: #291720;
   text-align: center;
   /* box-shadow: 0px 6px 10px #402424 inset; */
   box-shadow: 0px 6px 10px #291720 inset;
   font-family: 'Dongle', sans-serif;
-  font-size: 190%;
+  font-size: 250%;
 }
 
 .platform {
@@ -185,12 +227,16 @@ body {
   color: #291720;
   /* font-size: 120%; */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  width: 26%;
+  margin-left: 37%;
+  margin-right: 37%;
 }
 
 .insta {
-  width: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 30%;
   margin-left: auto;
   margin-right: auto;
@@ -206,7 +252,7 @@ body {
   border: 3px solid #291720;
   /* color: #ffb140; */
   color: #eee2df;
-  text-shadow: 2px 2px #8648ad;
+  /* text-shadow: 2px 2px #8648ad; */
   text-decoration: none;
   font-family: 'Dongle', sans-serif;
   font-size: 90%;
@@ -236,55 +282,6 @@ body {
 
 #mySidenav a:hover {
   left: 0; /* On mouse-over, make the elements appear as they should */
-}
-
-/* The about link: 20px from the top with a green background */
-#art {
-  top: 260px;
-  background-color: crimson;
-  color: #ffc240;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-#fiction {
-  top: 320px;
-  background-color: cornflowerblue;
-  /* color: #402424; */
-  color: #0d1321;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-#nonfiction {
-  top: 380px;
-  background-color: maroon;
-  color: #ffc240;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-#poetry {
-  top: 440px;
-  background-color: rosybrown;
-  /* color: #402424; */
-  color: #0d1321;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  vertical-align: middle;
-}
-
-#music {
-  top: 500px;
-  background-color: seagreen;
-  color: #ffc240;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
 }
 
 .symbol {
@@ -321,7 +318,7 @@ body {
 }
 
 .oneIssue {
-  background-color: #e44e5a;
+  background-color: #7389ae;
   box-shadow: 3px 3px 5px #291720;
   width: 240px;
   height: 350px;
@@ -362,12 +359,14 @@ hr {
   margin: -8px;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   box-shadow: 0px -6px 10px #291720, 0px 6px 10px #291720;
   /* box-shadow: 0px 6px 10px #1d1e2c; */
 }
 
 .teamLower {
-  background: #e44e5a;
+  background: #8648ad;
   margin: -8px;
   padding: 20px;
   /* color: #402424; */
@@ -418,7 +417,7 @@ iframe {
   text-align: center;
   font-family: 'Dongle', sans-serif;
   font-size: 175%;
-  background: #e44e5a;
+  background: #7389ae;
   margin: -8px;
   padding: 20px;
   color: #291720;
@@ -442,10 +441,13 @@ iframe {
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 5%;
+  background: url("./pics/text.png");
   /* background: #291720; */
 }
 
 .form {
   text-decoration: none;
   color: #8648ad;
+  background-color: lightgray;
+  padding: 20px;
 }
