@@ -93,10 +93,10 @@ body {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 1000px) {
-  .sidebar {padding-top: 15px;}
+  /* .sidebar {padding-top: 15px;} */
   .sidebar a {font-size: 40px;}
   .logo {height: 150px; width: 150px;}
-  .title {font-size: 175%;}
+  /* .title {font-size: 250%;} */
   .largeLogo {width: 40%;}
   .readNow {font-size: 200%;}
 }
@@ -109,7 +109,7 @@ body {
   background-color: #291720;
   padding: auto;
   margin-left: 30px;
-  font-size: 150%;
+  font-size: 200%;
   font-family: 'Dongle', sans-serif;
   text-decoration: none;
   display: flex;
@@ -406,22 +406,23 @@ hr {
   height: 320px;
   display: flex;
   flex-direction: column;
+  /* justify-content: space-around; */
 }
 
 .memberName {
   color: #291720;
   text-align: center;
   padding-bottom: 10px;
-  font-size: 120%;
+  font-size: 115%;
 }
 
 @media screen and (max-width: 1000px) {
   .member {
     box-shadow: 0 4px 8px 0 #291720, 0 6px 20px 0 #291720;
     width: 225px;
-    height: 288px;
+    height: 300px;
   }
-  .memberName {font-size: 150%;}
+  .memberName {font-size: 115%;}
   .sponsor {font-size: 200%;}
 }
 
