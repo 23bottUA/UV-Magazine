@@ -92,7 +92,7 @@ body {
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 600px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 40px;}
   .logo {height: 150px; width: 150px;}
@@ -415,15 +415,13 @@ hr {
   font-size: 120%;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 600px) {
   .member {
     box-shadow: 0 4px 8px 0 #291720, 0 6px 20px 0 #291720;
     width: 225px;
     height: 288px;
   }
-
   .memberName {font-size: 150%;}
-
   .sponsor {font-size: 200%;}
 }
 
