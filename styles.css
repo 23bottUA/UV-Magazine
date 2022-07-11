@@ -101,14 +101,12 @@ body {
   /* .title {font-size: 250%;} */
   .largeLogo {width: 40%;}
   .readNow {font-size: 250%;}
-  .member {
-    box-shadow: 0 4px 8px 0 #291720, 0 6px 20px 0 #291720;
-    width: 225px;
-    height: 300px;
-  }
+  .member {box-shadow: 0 4px 8px 0 #291720, 0 6px 20px 0 #291720; width: 225px; height: 300px;}
   .memberName {font-size: 115%;}
   .sponsor {font-size: 200%;}
   .mission {font-size: 350%;}
+  .socials {font-size: 300%;}
+  /* .platform {flex-direction: column;} */
 }
 
 /* index.html */
@@ -242,13 +240,14 @@ body {
 .platform {
   /* color: #ffc240; */
   color: #291720;
+  text-decoration: underline;
   /* font-size: 120%; */
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 26%;
+  /* width: 26%;
   margin-left: 37%;
-  margin-right: 37%;
+  margin-right: 37%; */
 }
 
 .insta {
